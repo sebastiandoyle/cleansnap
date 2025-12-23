@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E81000012D4A000100000001 /* CleanSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000002D4A000100000001 /* CleanSnapApp.swift */; };
+		E81000032D4A000100000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000022D4A000100000002 /* ContentView.swift */; };
+		E81000052D4A000200000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81000042D4A000200000003 /* Assets.xcassets */; };
+		E81000072D4A000200000004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81000062D4A000200000004 /* Preview Assets.xcassets */; };
+		E81000092D4A000300000005 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000082D4A000300000005 /* PhotoManager.swift */; };
+		E810000B2D4A000300000006 /* DuplicateDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810000A2D4A000300000006 /* DuplicateDetector.swift */; };
+		E810000D2D4A000300000007 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810000C2D4A000300000007 /* PhotoModel.swift */; };
+		E810000F2D4A000300000008 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810000E2D4A000300000008 /* HomeView.swift */; };
+		E81000112D4A000300000009 /* DuplicatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000102D4A000300000009 /* DuplicatesView.swift */; };
+		E81000132D4A00030000000A /* SimilarPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000122D4A00030000000A /* SimilarPhotosView.swift */; };
+		E81000152D4A00030000000B /* LargeFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000142D4A00030000000B /* LargeFilesView.swift */; };
+		E81000172D4A00030000000C /* ScreenshotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000162D4A00030000000C /* ScreenshotsView.swift */; };
+		E81000192D4A00030000000D /* SecretVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000182D4A00030000000D /* SecretVaultView.swift */; };
+		E810001B2D4A00030000000E /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810001A2D4A00030000000E /* ContactsView.swift */; };
+		E810001D2D4A00030000000F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810001C2D4A00030000000F /* SettingsView.swift */; };
+		E810001F2D4A000300000010 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810001E2D4A000300000010 /* PaywallView.swift */; };
+		E81000212D4A000300000011 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000202D4A000300000011 /* HomeViewModel.swift */; };
+		E81000232D4A000300000012 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000222D4A000300000012 /* StoreManager.swift */; };
+		E81000252D4A000300000013 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000242D4A000300000013 /* ContactManager.swift */; };
+		E81000272D4A000300000014 /* VaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000262D4A000300000014 /* VaultManager.swift */; };
+		E81000292D4A000300000015 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81000282D4A000300000015 /* Extensions.swift */; };
+		E810002B2D4A000300000016 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810002A2D4A000300000016 /* OnboardingView.swift */; };
+		E810002D2D4A000300000017 /* PhotoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810002C2D4A000300000017 /* PhotoGridView.swift */; };
+		E810002F2D4A000300000018 /* StorageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810002E2D4A000300000018 /* StorageAnalyzer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E80FFFFE2D4A000100000000 /* CleanSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81000002D4A000100000001 /* CleanSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSnapApp.swift; sourceTree = "<group>"; };
+		E81000022D4A000100000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E81000042D4A000200000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E81000062D4A000200000004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E81000082D4A000300000005 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		E810000A2D4A000300000006 /* DuplicateDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateDetector.swift; sourceTree = "<group>"; };
+		E810000C2D4A000300000007 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		E810000E2D4A000300000008 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E81000102D4A000300000009 /* DuplicatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicatesView.swift; sourceTree = "<group>"; };
+		E81000122D4A00030000000A /* SimilarPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarPhotosView.swift; sourceTree = "<group>"; };
+		E81000142D4A00030000000B /* LargeFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFilesView.swift; sourceTree = "<group>"; };
+		E81000162D4A00030000000C /* ScreenshotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotsView.swift; sourceTree = "<group>"; };
+		E81000182D4A00030000000D /* SecretVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretVaultView.swift; sourceTree = "<group>"; };
+		E810001A2D4A00030000000E /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		E810001C2D4A00030000000F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E810001E2D4A000300000010 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		E81000202D4A000300000011 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E81000222D4A000300000012 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		E81000242D4A000300000013 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		E81000262D4A000300000014 /* VaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultManager.swift; sourceTree = "<group>"; };
+		E81000282D4A000300000015 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E810002A2D4A000300000016 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E810002C2D4A000300000017 /* PhotoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridView.swift; sourceTree = "<group>"; };
+		E810002E2D4A000300000018 /* StorageAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAnalyzer.swift; sourceTree = "<group>"; };
+		E81000302D4A000300000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81000312D4A00030000001A /* CleanSnap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanSnap.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E80FFFFB2D4A000100000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E80FFFF52D4A000100000000 = {
+			isa = PBXGroup;
+			children = (
+				E80FFFFF2D4A000100000000 /* CleanSnap */,
+				E80FFFFF2D4A000100000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E80FFFFF2D4A000100000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E80FFFFE2D4A000100000000 /* CleanSnap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E80FFFFF2D4A000100000000 /* CleanSnap */ = {
+			isa = PBXGroup;
+			children = (
+				E81000302D4A000300000019 /* Info.plist */,
+				E81000312D4A00030000001A /* CleanSnap.entitlements */,
+				E81000002D4A000100000001 /* CleanSnapApp.swift */,
+				E81000022D4A000100000002 /* ContentView.swift */,
+				E81000332D4A000300000020 /* Models */,
+				E81000342D4A000300000021 /* Views */,
+				E81000352D4A000300000022 /* ViewModels */,
+				E81000362D4A000300000023 /* Services */,
+				E81000372D4A000300000024 /* Utils */,
+				E81000042D4A000200000003 /* Assets.xcassets */,
+				E81000382D4A000300000025 /* Preview Content */,
+			);
+			path = CleanSnap;
+			sourceTree = "<group>";
+		};
+		E81000332D4A000300000020 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E810000C2D4A000300000007 /* PhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E81000342D4A000300000021 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E810000E2D4A000300000008 /* HomeView.swift */,
+				E81000102D4A000300000009 /* DuplicatesView.swift */,
+				E81000122D4A00030000000A /* SimilarPhotosView.swift */,
+				E81000142D4A00030000000B /* LargeFilesView.swift */,
+				E81000162D4A00030000000C /* ScreenshotsView.swift */,
+				E81000182D4A00030000000D /* SecretVaultView.swift */,
+				E810001A2D4A00030000000E /* ContactsView.swift */,
+				E810001C2D4A00030000000F /* SettingsView.swift */,
+				E810001E2D4A000300000010 /* PaywallView.swift */,
+				E810002A2D4A000300000016 /* OnboardingView.swift */,
+				E810002C2D4A000300000017 /* PhotoGridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E81000352D4A000300000022 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E81000202D4A000300000011 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E81000362D4A000300000023 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E81000082D4A000300000005 /* PhotoManager.swift */,
+				E810000A2D4A000300000006 /* DuplicateDetector.swift */,
+				E81000222D4A000300000012 /* StoreManager.swift */,
+				E81000242D4A000300000013 /* ContactManager.swift */,
+				E81000262D4A000300000014 /* VaultManager.swift */,
+				E810002E2D4A000300000018 /* StorageAnalyzer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E81000372D4A000300000024 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E81000282D4A000300000015 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E81000382D4A000300000025 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E81000062D4A000200000004 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E80FFFFD2D4A000100000000 /* CleanSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E810003A2D4A000300000027 /* Build configuration list for PBXNativeTarget "CleanSnap" */;
+			buildPhases = (
+				E80FFFFA2D4A000100000000 /* Sources */,
+				E80FFFFB2D4A000100000000 /* Frameworks */,
+				E80FFFFC2D4A000100000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanSnap;
+			productName = CleanSnap;
+			productReference = E80FFFFE2D4A000100000000 /* CleanSnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E80FFFF62D4A000100000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E80FFFFD2D4A000100000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E80FFFF92D4A000100000000 /* Build configuration list for PBXProject "CleanSnap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E80FFFF52D4A000100000000;
+			productRefGroup = E80FFFFF2D4A000100000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E80FFFFD2D4A000100000000 /* CleanSnap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E80FFFFC2D4A000100000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81000052D4A000200000003 /* Assets.xcassets in Resources */,
+				E81000072D4A000200000004 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E80FFFFA2D4A000100000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81000012D4A000100000001 /* CleanSnapApp.swift in Sources */,
+				E81000032D4A000100000002 /* ContentView.swift in Sources */,
+				E81000092D4A000300000005 /* PhotoManager.swift in Sources */,
+				E810000B2D4A000300000006 /* DuplicateDetector.swift in Sources */,
+				E810000D2D4A000300000007 /* PhotoModel.swift in Sources */,
+				E810000F2D4A000300000008 /* HomeView.swift in Sources */,
+				E81000112D4A000300000009 /* DuplicatesView.swift in Sources */,
+				E81000132D4A00030000000A /* SimilarPhotosView.swift in Sources */,
+				E81000152D4A00030000000B /* LargeFilesView.swift in Sources */,
+				E81000172D4A00030000000C /* ScreenshotsView.swift in Sources */,
+				E81000192D4A00030000000D /* SecretVaultView.swift in Sources */,
+				E810001B2D4A00030000000E /* ContactsView.swift in Sources */,
+				E810001D2D4A00030000000F /* SettingsView.swift in Sources */,
+				E810001F2D4A000300000010 /* PaywallView.swift in Sources */,
+				E81000212D4A000300000011 /* HomeViewModel.swift in Sources */,
+				E81000232D4A000300000012 /* StoreManager.swift in Sources */,
+				E81000252D4A000300000013 /* ContactManager.swift in Sources */,
+				E81000272D4A000300000014 /* VaultManager.swift in Sources */,
+				E81000292D4A000300000015 /* Extensions.swift in Sources */,
+				E810002B2D4A000300000016 /* OnboardingView.swift in Sources */,
+				E810002D2D4A000300000017 /* PhotoGridView.swift in Sources */,
+				E810002F2D4A000300000018 /* StorageAnalyzer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E81000392D4A000300000026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E810003B2D4A000300000028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E810003C2D4A000300000029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CleanSnap/CleanSnap.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CleanSnap/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanSnap/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CleanSnap;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSContactsUsageDescription = "CleanSnap needs access to your contacts to find and merge duplicates.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "CleanSnap needs permission to save photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "CleanSnap needs access to your photo library to find duplicates and free up storage space.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleansnap.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E810003D2D4A00030000002A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CleanSnap/CleanSnap.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CleanSnap/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanSnap/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CleanSnap;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSContactsUsageDescription = "CleanSnap needs access to your contacts to find and merge duplicates.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "CleanSnap needs permission to save photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "CleanSnap needs access to your photo library to find duplicates and free up storage space.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleansnap.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E80FFFF92D4A000100000000 /* Build configuration list for PBXProject "CleanSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81000392D4A000300000026 /* Debug */,
+				E810003B2D4A000300000028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E810003A2D4A000300000027 /* Build configuration list for PBXNativeTarget "CleanSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E810003C2D4A000300000029 /* Debug */,
+				E810003D2D4A00030000002A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E80FFFF62D4A000100000000 /* Project object */;
+}

@@ -1,0 +1,56 @@
+appId: com.cleansnap.app
+
+---
+
+# Onboarding Flow Screenshots
+- launchApp:
+    clearState: true
+
+# Screenshot 1: Welcome screen
+- waitForAnimationToEnd
+- takeScreenshot: screenshots/01_onboarding_welcome
+
+# Tap Next to go to second page
+- tapOn: "Next"
+- waitForAnimationToEnd
+- takeScreenshot: screenshots/02_onboarding_duplicates
+
+# Tap Next to go to third page
+- tapOn: "Next"
+- waitForAnimationToEnd
+- takeScreenshot: screenshots/03_onboarding_vault
+
+# Tap Next to go to fourth page
+- tapOn: "Next"
+- waitForAnimationToEnd
+- takeScreenshot: screenshots/04_onboarding_cleanup
+
+# Skip to main app
+- tapOn: "Continue with Limited Access"
+- waitForAnimationToEnd
+
+# Screenshot 5: Home screen
+- takeScreenshot: screenshots/05_home_screen
+
+# Navigate to Duplicates tab
+- tapOn: "Duplicates"
+- waitForAnimationToEnd
+- takeScreenshot: screenshots/06_duplicates_screen
+
+# Navigate to Vault tab
+- tapOn: "Vault"
+- waitForAnimationToEnd
+- takeScreenshot: screenshots/07_vault_locked
+
+# Navigate to Settings tab
+- tapOn: "Settings"
+- waitForAnimationToEnd
+- takeScreenshot: screenshots/08_settings_screen
+
+# Go back to Home and tap on premium
+- tapOn: "Home"
+- waitForAnimationToEnd
+- tapOn:
+    id: "crown.fill"
+- waitForAnimationToEnd
+- takeScreenshot: screenshots/09_paywall
