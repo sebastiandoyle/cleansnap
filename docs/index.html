@@ -3,107 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CleanSnap - Photo Cleanup App</title>
+    <title>CleanSnap - iPhone Photo Cleaner & Storage Optimizer</title>
+    <meta name="description" content="CleanSnap helps you free up iPhone storage by finding and removing duplicate photos, similar images, screenshots, and large files. Download free on the App Store.">
+    <meta name="keywords" content="iPhone photo cleaner, duplicate photo finder, free up iPhone storage, delete duplicate photos, iPhone storage full, photo cleanup app">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sebastiandoyle.github.io/cleansnap/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CleanSnap - iPhone Photo Cleaner & Storage Optimizer">
+    <meta property="og:description" content="Free up gigabytes of iPhone storage by removing duplicate photos, similar images, and unnecessary screenshots.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sebastiandoyle.github.io/cleansnap/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CleanSnap - iPhone Photo Cleaner">
+    <meta name="twitter:description" content="Free up gigabytes of iPhone storage by removing duplicate photos and similar images.">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             min-height: 100vh;
+            color: #fff;
         }
-        .container {
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
         }
-        header {
-            text-align: center;
-            padding: 60px 0;
-            color: white;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-        .card h2 {
-            color: #007AFF;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
-        .links {
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+            border-radius: 28px;
+            margin: 0 auto 30px;
             display: flex;
-            gap: 20px;
+            align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 30px;
+            font-size: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
         }
-        .links a {
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #fff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
             display: inline-block;
-            padding: 15px 30px;
-            background: white;
-            color: #007AFF;
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
             text-decoration: none;
-            border-radius: 10px;
             font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3);
         }
-        .links a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(139, 92, 246, 0.4);
         }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #a78bfa;
+        }
+
+        .feature-card p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.5;
+        }
+
+        .guides-section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .guides-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #a78bfa;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .guide-link {
+            display: block;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 15px;
+            padding: 20px 25px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s;
+        }
+
+        .guide-link:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(167, 139, 250, 0.3);
+            transform: translateX(5px);
+        }
+
+        .guide-link h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .guide-link p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .guide-link .arrow {
+            float: right;
+            color: #a78bfa;
+        }
+
         footer {
             text-align: center;
-            padding: 40px;
-            color: white;
-            opacity: 0.8;
+            padding: 40px 20px;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #a78bfa;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .tagline { font-size: 1.1rem; }
+            .logo { width: 100px; height: 100px; font-size: 40px; }
         }
     </style>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CleanSnap",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "iPhone photo cleaner app that finds and removes duplicate photos, similar images, and unnecessary screenshots to free up storage.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>CleanSnap</h1>
-            <p>Free up storage space by finding and removing duplicate photos</p>
-        </header>
+    <section class="hero">
+        <div class="logo">✨</div>
+        <h1>CleanSnap</h1>
+        <p class="tagline">Free up gigabytes of iPhone storage instantly. Find duplicate photos, similar images, old screenshots, and large files eating your space.</p>
+        <a href="https://apps.apple.com/app/cleansnap" class="cta-button">Download Free on App Store</a>
+    </section>
 
-        <div class="card">
-            <h2>Features</h2>
-            <ul>
-                <li>Find and remove duplicate photos instantly</li>
-                <li>Identify similar photos taken at the same time</li>
-                <li>Clean up screenshots and large files</li>
-                <li>Secure vault for private photos</li>
-                <li>Merge duplicate contacts</li>
-                <li>Works offline - your data stays on your device</li>
-            </ul>
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">📸</div>
+            <h3>Find Duplicates</h3>
+            <p>Advanced AI detection finds exact and near-duplicate photos, even if they were edited or resized.</p>
         </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Similar Photos</h3>
+            <p>Group similar shots together and keep only the best one from each photo session.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Screenshot Cleanup</h3>
+            <p>Bulk delete old screenshots you no longer need with smart date filtering.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💾</div>
+            <h3>Large Files</h3>
+            <p>Find videos and photos taking up the most space and decide what to keep.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Secret Vault</h3>
+            <p>Hide private photos behind Face ID protection, completely invisible to others.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>One-Tap Clean</h3>
+            <p>Review and delete everything with a single tap. Your photos stay on device.</p>
+        </div>
+    </section>
 
-        <div class="links">
+    <section class="guides-section">
+        <h2>iPhone Storage Guides</h2>
+        <div class="guides-grid">
+            <a href="delete-duplicate-photos-iphone.html" class="guide-link">
+                <h3>How to Delete Duplicate Photos on iPhone <span class="arrow">→</span></h3>
+                <p>Step-by-step guide to finding and removing duplicate photos</p>
+            </a>
+            <a href="free-up-iphone-storage.html" class="guide-link">
+                <h3>How to Free Up iPhone Storage <span class="arrow">→</span></h3>
+                <p>10 proven ways to reclaim gigabytes of space</p>
+            </a>
+            <a href="iphone-storage-full-fix.html" class="guide-link">
+                <h3>iPhone Storage Full? Here's the Fix <span class="arrow">→</span></h3>
+                <p>Quick solutions when you're running out of space</p>
+            </a>
+            <a href="find-similar-photos-iphone.html" class="guide-link">
+                <h3>Find Similar Photos on iPhone <span class="arrow">→</span></h3>
+                <p>Group and clean up similar shots from your photo library</p>
+            </a>
+            <a href="best-duplicate-photo-finder-iphone.html" class="guide-link">
+                <h3>Best Duplicate Photo Finder Apps <span class="arrow">→</span></h3>
+                <p>Compare top apps for finding duplicate photos</p>
+            </a>
+            <a href="delete-screenshots-iphone.html" class="guide-link">
+                <h3>Bulk Delete Screenshots on iPhone <span class="arrow">→</span></h3>
+                <p>Clean up old screenshots taking up space</p>
+            </a>
+            <a href="iphone-photo-cleaner-app.html" class="guide-link">
+                <h3>Best iPhone Photo Cleaner Apps 2025 <span class="arrow">→</span></h3>
+                <p>Top-rated apps for organizing your photo library</p>
+            </a>
+            <a href="clear-iphone-storage-photos.html" class="guide-link">
+                <h3>Clear iPhone Storage from Photos <span class="arrow">→</span></h3>
+                <p>Reduce photo library size without losing memories</p>
+            </a>
+            <a href="remove-burst-photos-iphone.html" class="guide-link">
+                <h3>Remove Burst Photos on iPhone <span class="arrow">→</span></h3>
+                <p>Delete burst photo duplicates eating your storage</p>
+            </a>
+            <a href="iphone-storage-other-category.html" class="guide-link">
+                <h3>What is "Other" in iPhone Storage? <span class="arrow">→</span></h3>
+                <p>Understand and clear the mysterious Other category</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CleanSnap. All rights reserved.</p>
+        <p style="margin-top: 15px;">
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
             <a href="support.html">Support</a>
-        </div>
-
-        <footer>
-            <p>&copy; 2024 CleanSnap. All rights reserved.</p>
-        </footer>
-    </div>
+        </p>
+    </footer>
 </body>
 </html>
